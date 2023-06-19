@@ -1,0 +1,40 @@
+Ekstraksi Fitur Berdasarkan Warna:
+Metode ini melibatkan ekstraksi fitur berdasarkan informasi warna dalam citra. 
+Misalnya, kita dapat menggunakan histogram warna untuk mengukur distribusi intensitas warna di dalam citra. 
+Dengan menggunakan histogram warna, kita dapat mengidentifikasi pola dan properti khusus dari citra, 
+seperti kecerahan, kontras, dan tingkat saturasi.
+
+Ekstraksi Fitur LBP (Local Binary Patterns):
+LBP adalah metode yang digunakan untuk menggambarkan tekstur dalam citra. 
+Ini bekerja dengan membandingkan intensitas piksel dengan tetangganya dalam suatu jendela. 
+Untuk setiap piksel, kita menghasilkan representasi biner berdasarkan perbandingan ini.
+LBP dapat digunakan untuk mendeteksi pola tekstur yang berguna dalam berbagai aplikasi, 
+seperti pengenalan wajah, deteksi objek, dan klasifikasi citra.
+
+Ekstraksi Fitur GLCM (Grey Level Co-occurrence Matrix):
+GLCM digunakan untuk menganalisis hubungan spasial antara piksel dalam citra keabuan.
+GLCM menghitung matriks kemunculan tingkat abu-abu untuk menggambarkan distribusi hubungan 
+antara pasangan piksel dengan intensitas tertentu. Dari GLCM, kita dapat menghitung berbagai 
+fitur statistik seperti energi, kontras, homogenitas, dan entropi. Fitur-fitur ini dapat 
+digunakan dalam klasifikasi citra dan deteksi objek.
+
+Menggunakan Corner Detector:
+Algoritma deteksi sudut (corner detection) digunakan untuk mengidentifikasi sudut-sudut penting 
+dalam citra. Sudut-sudut ini memiliki karakteristik khusus yang berguna dalam pencocokan fitur,
+penjejakan objek, dan rekonstruksi 3D. Beberapa algoritma deteksi sudut yang umum digunakan
+adalah Harris Corner Detector dan Shi-Tomasi Corner Detector.
+
+Feature Detection and Matching:
+Teknik ini melibatkan deteksi fitur yang menonjol dalam citra dan mencocokkannya di antara
+beberapa citra. Fitur-fitur ini dapat berupa tepi, sudut, atau tekstur yang unik dalam citra.
+Dengan mencocokkan fitur-fitur yang cocok, kita dapat melakukan tugas seperti pencocokan citra, 
+pencocokan objek, dan penjejakan.
+
+Template Matching:
+Template matching adalah teknik yang digunakan untuk mencocokkan sebuah template dengan citra
+yang lebih besar. Dalam kasus ini, kita mencari kemunculan template yang sama dalam citra target.
+Template matching dapat digunakan untuk deteksi objek sederhana ketika kita memiliki template objek yang sudah diketahui.
+
+Dalam percobaan untuk mendeteksi sawit dengan template matching, digunakan template
+gambar sawit yang sudah diketahui untuk mencocokkannya dengan citra yang lebih besar dan mencari
+kemunculan sawit dalam citra tersebut.
